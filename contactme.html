@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<style>
+/* this is my inline css, i have used different attributes to customize certain elements */
+/* this is to chnage the colour of the background */
+.body {
+    background-color: rgb(245, 229, 208);
+    
+}
+/* navbar position */
+.navbar-brand{
+
+margin: 0;
+padding: 10mm;
+
+}
+/* conact form attributes */
+#contact{
+    background: url(images/imgbackground4.png) center/cover no-repeat;
+}
+#contact form{
+    max-width: 680px;
+}
+#contact form .form-control{
+    padding: 12px;
+   
+}
+#contact form .form-control::placeholder{
+    color: #fff;
+}
+#contact form .btn{
+    color: var(--pink);
+}
+#contact form .btn:hover{
+    background-color: transparent!important;
+    color: #fff;}
+
+
+    .container .btn:hover {
+  background-color: black;
+}
+
+/* button customization attributes */
+    .btn{
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(203, 164, 105);
+  color: white;
+  font-size: 16px;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px;
+  margin-left:40px;
+  width: 100px;
+    }
+
+    a:visited {
+text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+
+</style>
+<body class="body">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <!-- clicking on eshita rane will also take you to the home page -->
+          <a class="navbar-brand font-monospace" href="index.html">Eshita Rane</a>
+        <!-- these are bootrap that i referenced from the getbootstrap site to create a reponsve and collapsible nav bar that turns into  a hamburger menu  -->
+          <button class="navbar-toggler" style="margin-right:5px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+          <div class="collapse navbar-collapse top_nav" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto font-monospace ">
+                <!-- these are the 4 pages - home which is the main landing page. blog which is my blog page. projects which has my work and contact e which has a form. -->
+                <li class="nav-item "><a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item "><a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item "><a href="contactme.html" class="nav-link">Contact Me</a>
+                </li>
+              </ul>
+              <ul class="navbar navbar-nav navbar-right" style="display:flex;">
+                 <!-- here i have linked my instagram page -->
+
+                <li>
+                    <a href = "https://www.instagram.com/art_by_eshita/" class = "btn mt-3 font-monospace">Follow me</a>
+                </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- this is the div for my contact information form.  -->
+    <div id = "contact" class = "vh-100 pt-5">
+        <div class = "container">
+            <div class = "title text-center mb-5">
+                <span class = "con text-uppercase mt-5 pt-5 d-block text-white font-monospace">Contact Me</span>
+            </div>
+
+            <form class = "mx-auto">
+                <div class = "mb-3">
+                    <input type = "text" class = "form-control bg-transparent text-black-50 border-4 border-white font-monospace" placeholder="Name">
+                </div>
+                <div class = "mb-3">
+                    <input type = "text" class = "form-control bg-transparent text-black border-4 border-white font-monospace" placeholder="Email">
+                </div>
+                <div class = "mb-3">
+                    <textarea rows = "5" class = "form-control bg-transparent text-black border-4 border-white font-monospace" placeholder="Message"></textarea>
+                </div>
+                <div>
+                    <a href = "https://www.instagram.com/art_by_eshita/" class = "btn mt-3 font-monospace my-5 text-light" >Follow me</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
